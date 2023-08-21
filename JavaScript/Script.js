@@ -36,14 +36,19 @@ function calcularCuotaTratamiento(pago, cuotas) {
   
   while (menu != "fin") {
   
+    
     // -------------------------------- INGRESO A LA LISTA ---------------------------------- //
   
+
     menu = prompt( 'Ingrese "lista" para ver los tratamientos disponibles o "fin" para terminar' );
   
     if (menu != "fin") {
       {
-        // --------------------------------- SELECCION DE TRATAMIENTO ----------------------------- //
+
+
+      // --------------------------------- SELECCION DE TRATAMIENTO ----------------------------- //
   
+
         tratamiento = prompt( "Ingrese el nombre del tratamiento para seleccionarlo\n Abrillantado: $20000\n Pulido: $32000\n Ceramico: $54000" );
   
         console.log("Tratamiento seleccionado: " + tratamiento);
@@ -51,8 +56,10 @@ function calcularCuotaTratamiento(pago, cuotas) {
         pagos = prompt("¿Como abonaras?, ¿Tarjeta o Efectivo? ");
       }
   
+
       // ------------------------------------------   EFECTIVO   ---------------------------------------------- //
   
+
       if (pagos == "efectivo") {
         if (tratamiento == "Abrillantado" || tratamiento == "abrillantado") {
   
@@ -74,6 +81,7 @@ function calcularCuotaTratamiento(pago, cuotas) {
   
       }
   
+
       // ------------------------------------------- TARJETA -------------------------------------------- //
   
       else if (pagos == "tarjeta") {
@@ -103,6 +111,7 @@ function calcularCuotaTratamiento(pago, cuotas) {
       }
     }
   
+
     // ----------------------------------------------- FIN ----------------------------------------------- //
     else {
         console.log("Refresque la pagina para comenzar a comprar");
