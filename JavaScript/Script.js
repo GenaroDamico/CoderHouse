@@ -1,4 +1,4 @@
-function calcularCuotaTratamiento(pago) {
+function calcularCuotaTratamiento(pago, cuotas) {
 
   cuotas = parseInt(cuotas);
 
@@ -22,9 +22,9 @@ function calcularCuotaTratamiento(pago) {
   
   // ---- PRECIOS DE PRODUCTOS ----- //
   
-  let precio_abrillantado = 20000;
-  let precio_pulido = 32000;
-  let precio_ceramico = 54000;
+  const precio_abrillantado = 20000;
+  const precio_pulido = 32000;
+  const precio_ceramico = 54000;
   
   // ---- VARIABLES ---- //
   
@@ -82,22 +82,22 @@ function calcularCuotaTratamiento(pago) {
   
         if (tratamiento == "Abrillantado" || tratamiento == "abrillantado") {
   
-          console.log( "El precio final en",cuotas,"cuotas es $",calcularCuotaTratamiento(precio_abrillantado) + precio_abrillantado );
-          console.log( "El precio de cada cuota es: $",(calcularCuotaTratamiento(precio_abrillantado) + precio_abrillantado) / cuotas );
+          console.log( "El precio final en",cuotas,"cuotas es $",calcularCuotaTratamiento(precio_abrillantado, cuotas) + precio_abrillantado );
+          console.log( "El precio de cada cuota es: $",(calcularCuotaTratamiento(precio_abrillantado, cuotas) + precio_abrillantado) / cuotas );
   
         }
   
         else if (tratamiento == "Pulido" || tratamiento == "pulido") {
   
-          console.log( "El precio final en",cuotas,"cuotas es $",calcularCuotaTratamiento(precio_pulido) + precio_pulido );
-          console.log( "El precio de cada cuota es: $",(calcularCuotaTratamiento(precio_pulido) + precio_pulido) / cuotas );
+          console.log( "El precio final en",cuotas,"cuotas es $",calcularCuotaTratamiento(precio_pulido, cuotas) + precio_pulido );
+          console.log( "El precio de cada cuota es: $",(calcularCuotaTratamiento(precio_pulido, cuotas) + precio_pulido) / cuotas );
   
         }
   
         else if (tratamiento == "Ceramico" || tratamiento == "ceramico") {
   
-          console.log( "El precio final en",cuotas,"cuotas es $",calcularCuotaTratamiento(precio_ceramico) + precio_ceramico );
-          console.log( "El precio de cada cuota es: $",(calcularCuotaTratamiento(precio_ceramico) + precio_ceramico) / cuotas );
+          console.log( "El precio final en",cuotas,"cuotas es $",calcularCuotaTratamiento(precio_ceramico, cuotas) + precio_ceramico );
+          console.log( "El precio de cada cuota es: $",(calcularCuotaTratamiento(precio_ceramico, cuotas) + precio_ceramico) / cuotas );
   
         }
       }
